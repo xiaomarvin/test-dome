@@ -1,11 +1,8 @@
 <template>
   <div class="">
     <q-toolbar class="bg-primary text-white">
-      <q-avatar
-        size="50px"
-        square
-      >
-        <img src="../assets/img/home.png">
+      <q-avatar size="50px" square>
+        <img src="../assets/img/home.png" />
       </q-avatar>
       <q-space />
       <q-btn
@@ -30,20 +27,36 @@
       </q-drawer>
       <!-- 侧边栏 end -->
     </q-toolbar>
+    <div class="row justify-between">
+      <q-input
+      class="col"
+        outlined
+        v-model.lazy="textuser"
+        label="用户名"
+        placeholder="请输入数字..."
+      />
+      <q-btn>搜索</q-btn>
+    </div>
+    
+    <div>{{ textuser }}</div>
   </div>
 </template>
 <script>
 export default {
   name: "Home",
-  data () {
+  data() {
     return {
-      drawerRight: false
+      drawerRight: false,
+      textuser: "",
     };
   },
-  methods: {
-  }
+  methods: {},
 };
 </script>
 
 <style scoped>
+.box{
+  display: flex;
+  justify-content: space-between;
+}
 </style>
