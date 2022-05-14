@@ -15,6 +15,13 @@
         label="密码"
         placeholder="请输入密码..."
       />
+      <q-input
+      class="col"
+        outlined
+        v-model.lazy="textuser"
+        label="确认密码"
+        placeholder="请再次输入密码..."
+      />
       <q-btn>搜索</q-btn>
     </div>
     
