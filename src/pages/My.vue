@@ -8,6 +8,13 @@
         label="用户名"
         placeholder="请输入数字..."
       />
+      <q-input
+      class="col"
+        outlined
+        v-model.lazy="textuser"
+        label="密码"
+        placeholder="请输入密码..."
+      />
       <q-btn>搜索</q-btn>
     </div>
     
