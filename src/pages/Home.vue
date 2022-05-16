@@ -23,34 +23,25 @@
         :width="200"
         :breakpoint="500"
         content-class="bg-grey-3"
+        class="box"
       >
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          icon="drafts"
-          label="Drafts"
-          header-class="text-purple"
-        >
-          <q-card>
-            <q-card-section>
-              <q-tabs class="column col bg-red">
-                <q-route-tab
-                  style="width: 220px"
-                  icon="mail"
-                  to="/mails"
-                  exact
-                />
-                <q-route-tab
-                  style="width: 220px"
-                  icon="alarm"
-                  to="/alarms"
-                  exact
-                />
-              </q-tabs>
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
+        <q-tabs class="bg-red" style="max-width: 200px">
+          <q-route-tab icon="mail" to="/" exact />
+          <q-route-tab icon="alarm" to="/" exact />
+        </q-tabs>
+        <q-list dark dense bordered padding class="rounded-borders text-center">
+          <q-item to="/alarm" clickable v-ripple>
+            <q-item-section> Item </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section> Item </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section> Item </q-item-section>
+          </q-item>
+        </q-list>
       </q-drawer>
       <!-- 侧边栏 end -->
     </q-toolbar>
@@ -83,7 +74,12 @@ export default {
 
 <style scoped>
 .box {
+  /* height: 100%; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  align-items: center;
+  /* justify-content: space-between; */
 }
 </style>
