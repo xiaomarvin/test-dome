@@ -24,12 +24,39 @@
         :breakpoint="500"
         content-class="bg-grey-3"
       >
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          icon="drafts"
+          label="Drafts"
+          header-class="text-purple"
+        >
+          <q-card>
+            <q-card-section>
+              <q-tabs class="column col bg-red">
+                <q-route-tab
+                  style="width: 220px"
+                  icon="mail"
+                  to="/mails"
+                  exact
+                />
+                <q-route-tab
+                  style="width: 220px"
+                  icon="alarm"
+                  to="/alarms"
+                  exact
+                />
+              </q-tabs>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
       </q-drawer>
       <!-- 侧边栏 end -->
     </q-toolbar>
     <div class="row justify-between">
       <q-input
-      class="col"
+        class="col"
         outlined
         v-model.lazy="textuser"
         label="用户名"
@@ -37,7 +64,7 @@
       />
       <q-btn>搜索</q-btn>
     </div>
-    
+
     <div>{{ textuser }}</div>
   </div>
 </template>
@@ -55,7 +82,7 @@ export default {
 </script>
 
 <style scoped>
-.box{
+.box {
   display: flex;
   justify-content: space-between;
 }
