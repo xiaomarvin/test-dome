@@ -18,6 +18,7 @@
       <q-btn>按钮二</q-btn>
       <q-btn>按钮三</q-btn>
       <q-btn>按钮五</q-btn>
+      <q-btn>按钮六master</q-btn>
       <!-- 侧边栏 start -->
       <q-drawer
         side="right"
