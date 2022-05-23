@@ -13,6 +13,7 @@
         icon="menu"
         class="q-mr-sm"
       />
+      <q-btn>bob1</q-btn>
 
       <!-- 侧边栏 start -->
       <q-drawer
@@ -29,7 +30,7 @@
     </q-toolbar>
     <div class="row justify-between">
       <q-input
-      class="col"
+        class="col"
         outlined
         v-model.lazy="textuser"
         label="用户名"
@@ -37,7 +38,7 @@
       />
       <q-btn>搜索</q-btn>
     </div>
-    
+
     <div>{{ textuser }}</div>
   </div>
 </template>
@@ -55,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-.box{
+.box {
   display: flex;
   justify-content: space-between;
 }
