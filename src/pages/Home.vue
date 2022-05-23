@@ -13,6 +13,7 @@
         icon="menu"
         class="q-mr-sm"
       />
+      <q-btn>bob1</q-btn>
       <q-btn>按钮</q-btn>
       <q-btn>按钮4</q-btn>
       <q-btn>按钮二</q-btn>
