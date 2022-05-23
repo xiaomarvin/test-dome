@@ -14,7 +14,11 @@
         class="q-mr-sm"
       />
       <q-btn>bob1</q-btn>
-
+      <q-btn>按钮</q-btn>
+      <q-btn>按钮4</q-btn>
+      <q-btn>按钮二</q-btn>
+      <q-btn>按钮三</q-btn>
+      <q-btn>按钮五</q-btn>
       <!-- 侧边栏 start -->
       <q-drawer
         side="right"
@@ -24,7 +28,25 @@
         :width="200"
         :breakpoint="500"
         content-class="bg-grey-3"
+        class="box"
       >
+        <q-tabs class="bg-red" style="max-width: 200px">
+          <q-route-tab icon="mail" to="/" exact />
+          <q-route-tab icon="alarm" to="/" exact />
+        </q-tabs>
+        <q-list dark dense bordered padding class="rounded-borders text-center">
+          <q-item to="/alarm" clickable v-ripple>
+            <q-item-section> Item </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section> Item </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section> Item </q-item-section>
+          </q-item>
+        </q-list>
       </q-drawer>
       <!-- 侧边栏 end -->
     </q-toolbar>
@@ -57,7 +79,12 @@ export default {
 
 <style scoped>
 .box {
+  /* height: 100%; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  align-items: center;
+  /* justify-content: space-between; */
 }
 </style>
