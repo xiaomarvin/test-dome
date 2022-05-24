@@ -24,6 +24,7 @@
       <q-btn>按钮六master</q-btn>
       <q-btn>按钮七</q-btn>
       <q-btn>按钮8-mark</q-btn>
+      <q-btn>按钮-7-bob</q-btn>
       <!-- 侧边栏 start -->
       <q-drawer
         side="right"
