@@ -87,7 +87,14 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      labelval: [
+        { label: "今日已结", value: 1 },
+        { label: "昨日已结", value: 2 },
+        { label: "今日未结", value: 3 },
+        { label: "月内未结", value: 4 },
+      ],
+    };
   },
 };
 </script>
