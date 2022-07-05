@@ -1,5 +1,8 @@
 <template>
-  <div class="container">dome1</div>
+  <div class="container">
+    <div>dome1</div>
+    <div>dome2</div>
+  </div>
 </template>
 
 <script>
