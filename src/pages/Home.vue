@@ -4,6 +4,7 @@
       <q-avatar size="50px" square>
         <img src="../assets/img/home.png" />
       </q-avatar>
+      <q-btn label="弹窗" @click="show_table_dialog"></q-btn>
       <q-space />
       <q-btn
         @click="drawerRight = true"
@@ -13,13 +14,6 @@
         icon="menu"
         class="q-mr-sm"
       />
-      <q-btn>bob1</q-btn>
-      <q-btn>按钮</q-btn>
-      <q-btn>按钮4</q-btn>
-      <q-btn>按钮二</q-btn>
-      <q-btn>按钮三</q-btn>
-      <q-btn>按钮五</q-btn>
-      <q-btn>按钮六master</q-btn>
       <!-- 侧边栏 start -->
       <q-drawer
         side="right"
@@ -63,18 +57,48 @@
     </div>
 
     <div>{{ textuser }}</div>
+
+    <q-dialog v-model="is_dialog">
+      <Table :table_list="table_list" />
+   </q-dialog>
   </div>
 </template>
 <script>
+import Table from "./table.vue"
 export default {
   name: "Home",
+  components:{
+    Table
+  },
   data() {
     return {
       drawerRight: false,
       textuser: "",
+      is_dialog:false,
+      table_list:{
+        zhname:'',
+        zename:'',
+        enname:'',
+        vnname:'',
+        taname:'',
+        zhtag:'',
+        zetag:'',
+        entag:'',
+        vntag:'',
+        tatag:'',
+        zhlove:'',
+        zelove:'',
+        enlove:'',
+        vnlove:'',
+        talove:''
+      }
     };
   },
-  methods: {},
+  methods: {
+    show_table_dialog(){
+      this.is_dialog = true
+    }
+  },
 };
 </script>
 

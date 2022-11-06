@@ -11,10 +11,12 @@
   "dependencies": {
     "@intlify/vue-i18n-loader": "^4.2.0",
     "@quasar/extras": "^1.0.0",
+    "ant-design-vue": "^3.2.11",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
     "quasar": "^1.0.0",
+    "vue-cal": "^3.10.5",
     "vue-i18n": "^8.0.0",
     "yaml-loader": "^0.8.0"
   },
